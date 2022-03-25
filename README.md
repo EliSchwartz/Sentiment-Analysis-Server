@@ -1,4 +1,4 @@
-# Deploy BERT for Sentiment Analsysi with FastAPI
+# Deploy BERT for Sentiment Analsysis with FastAPI
 
 Deploy a pre-trained BERT model for Sentiment Analysis as a REST API using FastAPI
 
@@ -31,8 +31,8 @@ You can also [read the complete tutorial here](https://www.curiousily.com/posts/
 Clone this repo:
 
 ```sh
-git clone git@github.com:curiousily/Deploy-BERT-for-Sentiment-Analysis-with-FastAPI.git
-cd Deploy-BERT-for-Sentiment-Analysis-with-FastAPI
+git clone git@github.com:EliSchwartz/Sentiment-Analysis-Server.git
+cd Sentiment-Analysis-Server
 ```
 
 Install the dependencies:
@@ -46,6 +46,7 @@ Download the pre-trained model:
 ```sh
 bin/download_model
 ```
+If download fails manually locate "https://drive.google.com/uc?id=1V8itWtowCYnb2Bc9KlK9SxGff9WwmogA" in "assets/model_state_dict.bin"
 
 ## Test the setup
 
@@ -60,6 +61,9 @@ Send a test request:
 ```sh
 bin/test_request
 ```
+
+or
+```http POST http://localhost:8000/predict text="This app is a total waste of time!"```
 
 ## License
 
