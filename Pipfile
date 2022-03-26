@@ -14,7 +14,7 @@ fastapi = "*"
 uvicorn = "*"
 pydantic = "*"
 torch = "*"
-transformers = "*"
+transformers = "2.8.0"
 httpie = "*"
 
 [requires]
