@@ -53,7 +53,7 @@ If download fails manually locate "https://drive.google.com/uc?id=1V8itWtowCYnb2
 Start the HTTP server:
 
 ```sh
-bin/start_server
+CUDA_VISIBLE_DEVICES=0 bin/start_server
 ```
 
 Send a test request:
