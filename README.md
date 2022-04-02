@@ -52,11 +52,12 @@ If download fails manually locate "https://drive.google.com/uc?id=1V8itWtowCYnb2
 ## Test the setup
 
 Start the HTTP server:
-With GPU:
+
+With GPU
 ```sh
 CUDA_VISIBLE_DEVICES=0 bin/start_server
 ```
-Without GPU:
+Without GPU
 ```sh
 CUDA_VISIBLE_DEVICES='' bin/start_server
 ```
