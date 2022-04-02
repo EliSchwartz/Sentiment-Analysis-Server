@@ -38,6 +38,7 @@ cd Sentiment-Analysis-Server
 Install the dependencies:
 
 ```sh
+pip install pipenv
 pipenv install --dev
 ```
 
@@ -51,9 +52,13 @@ If download fails manually locate "https://drive.google.com/uc?id=1V8itWtowCYnb2
 ## Test the setup
 
 Start the HTTP server:
-
+With GPU:
 ```sh
 CUDA_VISIBLE_DEVICES=0 bin/start_server
+```
+Without GPU:
+```sh
+CUDA_VISIBLE_DEVICES='' bin/start_server
 ```
 
 Send a test request:
